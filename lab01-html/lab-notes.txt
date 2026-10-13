@@ -1,0 +1,84 @@
+Lab 1 
+Campus Events Portal — HTML5 Fundamental Lab
+
+Student Name: BAI YIXUAN
+Student ID: ES06271
+
+Lab 1: Hypertext Markup Language
+
+1. Environment & Software Used
+ Web Browser: Microsoft Edge
+ Code Editor: Visual Studio Code
+ Validation Tool: W3C Official HTML Validator
+ Operating System: Windows 11
+
+2. Overview of This Lab
+This laboratory focuses on fundamental HTML5 webpage structure.
+The tasks require creating a complete static webpage for a 'Campus Events Portal', including page structure, headings, paragraphs, lists, hyperlinks, images, and official HTML validation.
+
+3. Error Fixed During Validation
+Error Encountered
+One paragraph tag was left unclosed (`</p>` missing after event description text).
+Reason of Error
+HTML elements require strict opening and closing pairs.
+Unclosed tags cause undefined DOM structure and will be flagged by the W3C validator.
+Solution
+Manually added the missing closing paragraph tag to fix the nesting structure.
+After correction, the W3C validator shows 'zero errors and zero warnings'
+
+4. Difference between HTML Tag, Element, and Attribute
+1) HTML Tag
+Tags are the angle-bracket markup symbols used to define webpage structure.
+They are the syntax markers only.
+Example: `<h1>` (opening tag), `</h1>` (closing tag)
+
+2) HTML Element
+An element is the **full complete unit**, including opening tag, inner content, and closing tag.
+It represents one rendered object on the webpage.
+Example:
+`<h1>Campus Events Portal</h1>`
+
+3) HTML Attribute
+Attributes are 'property parameters' written inside the opening tag to modify element behaviour or information.
+Example:
+ `lang="en"` defines page language
+ `href="URL"` defines link destination
+`alt="description"` defines image alternative text
+
+5. Lab Task Summary & Working Principle Explanation
+Task 1 Principle
+After saving the local index.html file, the browser re-reads the plain text file, parses all HTML tags, rebuilds the DOM tree, and re-renders the updated content on screen.
+
+Task 2 Principle
+A standard HTML5 doctype and basic tree structure (`html > head + body`) ensures the browser interprets the page with modern HTML5 rules instead of old compatibility modes.
+
+Task 3 Principle
+Unordered lists (`ul, li`) structure grouped content
+External links load external websites
+Internal anchor links (`#id`) jump within the same page without reloading
+
+Task 4 Principle
+Relative file paths load local images.
+Alt text provides accessibility description and displays when images fail to load.
+Intentionally breaking the path demonstrates browser broken-image fallback behaviour.
+
+Task 5 Principle
+W3C validation enforces official HTML syntax standards, ensuring cross-browser compatibility and clean markup structure.
+
+ 6. Lab 1 Reflection Answers
+Q1: What happens between saving index.html and seeing the change in the browser?
+After saving the file, the browser refreshes its file cache, reads the updated plain-text HTML code, parses each tag to construct the DOM, and finally renders the visual layout and content on the screen. No server processing is required for static HTML files.
+
+Q2: Which HTML error did the validator help you correct, and what caused it?
+The main error was an unclosed paragraph tag.
+The error occurred because I omitted the closing tag while writing multi-line content. The validator detected incomplete element nesting and prompted a structural error fix.
+
+Q3: Explain tag, element, attribute with page examples
+Tag: `<a>` and `</a>` (pure syntax markers)
+Element: `<a href="#featured">Jump to Featured Events</a>` (full functional unit)
+Attribute: `href="#featured"` (modifies the behaviour of the link element)
+
+7. Final Lab Validation Result
+All HTML files passed W3C HTML Validator with 0 errors
+Page structure follows correct HTML5 semantic rules
+All links, images, and content display correctl
