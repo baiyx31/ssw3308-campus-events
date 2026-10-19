@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Events Portal</title>
+    <!-- Bootstrap 5.3.8 CSS (official CDN, jsDelivr). Loaded BEFORE custom.css so our own rules can refine it. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark brand-nav" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">Campus Events Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#featured">Featured Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#register">Register Interest</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-4">
+
+        <section id="about" class="mb-5">
+            <h1 class="mb-3">Campus Events Portal</h1>
+            <p class="lead">Welcome to our campus events portal. Students can browse and view all upcoming campus activities.</p>
+            <h2>About</h2>
+            <p>This portal publishes all campus events for university students.</p>
+            <p>
+                <a href="https://www.upm.edu.my">UPM</a>
+                <br />
+                <a href="#featured">Jump to Featured Events</a>
+            </p>
+            <img src="./images/upm.png" alt="This is the UPM school emblem." class="img-fluid emblem-img" />
+        </section>
+
+        <section id="featured" class="mb-5">
+            <h2 class="mb-3">Featured Events</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Tech Hackathon 2026 <span class="badge text-bg-danger">Hot</span></h3>
+                            <p class="card-text">A 24 hours programming competition for students.</p>
+                            <p class="card-text"><small class="text-body-secondary">Category: <span class="badge text-bg-primary">Coding</span></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Campus Music Festival <span class="badge text-bg-success">New</span></h3>
+                            <p class="card-text">Live music performance held at university hall.</p>
+                            <p class="card-text"><small class="text-body-secondary">Category: <span class="badge text-bg-warning">Music</span></small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Sports Day <span class="badge text-bg-info">Annual</span></h3>
+                            <p class="card-text">Inter-faculty sports competition.</p>
+                            <p class="card-text"><small class="text-body-secondary">Category: <span class="badge text-bg-secondary">Sports</span></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="mb-5">
+            <h2 class="mb-3">Event Schedule</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <caption>Upcoming campus events timetable</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-11-08</td>
+                            <td>09:00 - 17:00</td>
+                            <td>Tech Hackathon 2026</td>
+                            <td>Computer Centre Lab</td>
+                        </tr>
+                        <tr>
+                            <td>2026-11-15</td>
+                            <td>19:00 - 22:00</td>
+                            <td>Campus Music Festival</td>
+                            <td>University Hall</td>
+                        </tr>
+                        <tr>
+                            <td>2026-11-22</td>
+                            <td>08:00 - 18:00</td>
+                            <td>Sports Day</td>
+                            <td>Main Stadium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="register" class="mb-5">
+            <h2 class="mb-3">Register Your Interest</h2>
+            <form class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="regName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="regName" required />
+                    <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="regEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="regEmail" placeholder="name@example.com" required />
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="regEvent" class="form-label">Event</label>
+                    <select class="form-select" id="regEvent" required>
+                        <option value="" selected disabled>Choose an event...</option>
+                        <option value="hackathon">Tech Hackathon 2026</option>
+                        <option value="music">Campus Music Festival</option>
+                        <option value="sports">Sports Day</option>
+                    </select>
+                    <div class="invalid-feedback">Please choose an event.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="py-3 mt-4">
+        <div class="container">
+            <p class="mb-0 text-center"><small>&copy; 2026 Campus Events Portal. SSW3308 Lab 2.</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.8 JS bundle (official CDN). Loaded ONCE, includes Popper. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        // Bootstrap form validation: show feedback when the form is submitted with invalid fields.
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+    </script>
+</body>
+</html>
