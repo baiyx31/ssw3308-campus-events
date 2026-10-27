@@ -1,0 +1,33 @@
+/* Custom styles for Campus Events Portal (Lab 2).
+   Only brand colors, focus visibility and small spacing tweaks.
+   Everything else comes from Bootstrap utilities. No !important. */
+
+/* Brand color for the navbar */
+.brand-nav {
+    background-color: #1b3a5c;
+}
+
+/* Keep the UPM emblem at a sensible size */
+.emblem-img {
+    width: 200px;
+}
+
+/* Make keyboard focus clearly visible on links and buttons */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #ffb703;
+    outline-offset: 2px;
+}
+
+/* A little breathing room under card badges */
+.card .badge {
+    margin-left: 0.35rem;
+}
+
+/* Footer separation */
+footer {
+    border-top: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
